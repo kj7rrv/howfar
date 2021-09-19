@@ -26,7 +26,7 @@ class Connection:
         lines = [ json.loads(i) for i in data.split(b'\r\n')[:-1] ]
         return lines
 
-    def get_messages(self, accept_classes='all'):
+    def get_messages(self, accept_classes='all', required_keys={'TPV': ['lat', 'lon']}, clear=False):
         with self._lock:
             messages = self._queue + self._get()
 
@@ -34,19 +34,27 @@ class Connection:
                 self._queue = []
                 return messages
             elif accept_classes == 'none':
-                self._queue = messages
+                self._queue = [] if clear else messages
                 return []
             else:
                 out = []
                 requeue = []
 
                 for message in messages:
+                    accept = False
                     if message['class'] in accept_classes:
+                        try:
+                            rk = required_keys[message['class']]
+                        except KeyError:
+                            rk = []
+                        accept = all([i in message.keys() for i in rk])
+
+                    if accept:
                         out.append(message)
                     else:
                         requeue.append(message)
 
-                self._queue = requeue
+                self._queue = [] if clear else requeue
                 return out
 
     def clear_queue(self):

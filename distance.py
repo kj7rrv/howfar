@@ -7,7 +7,7 @@ def _distance(a, b):
     return kilometers*1000, miles*5280
 
 
-def distance(points):
+def distance(points, threshold=0.25, threshold_feet=False):
     '''
     returns distance between any number of points specified as an iterable
     of dicts from gpsd_api.py as a tuple (meters, feet)
@@ -20,8 +20,9 @@ def distance(points):
 
         for point in points[1:]:
             new_meters, new_feet = _distance(last_point, point)
-            meters += new_meters
-            feet += new_feet
+            if (new_feet if threshold_feet else new_meters) > threshold:
+                meters += new_meters
+                feet += new_feet
             last_point = point
 
         return meters, feet
