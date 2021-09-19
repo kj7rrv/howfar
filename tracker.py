@@ -24,5 +24,5 @@ while True:
     meters = distance.distance([last_point] + tpvs)[0]
     total_distance += meters
     last_point = tpvs[-1]
-    print(total_distance)
-    time.sleep(1)
+    print(round(total_distance*1000)/1000)
+    time.sleep(3)
