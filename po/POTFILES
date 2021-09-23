@@ -1,0 +1,7 @@
+data/com.github.linux-distance-tracker.desktop.in
+data/com.github.linux-distance-tracker.appdata.xml.in
+data/com.github.linux-distance-tracker.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+

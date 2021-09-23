@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ldt
+Exec=ldt
+Icon=com.github.linux-distance-tracker
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true
