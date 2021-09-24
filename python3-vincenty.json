@@ -1,0 +1,14 @@
+{
+    "name": "python3-vincenty",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"vincenty\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/c4/de/296372fde237fdda627fb6127a34689a3c1b25b6531a180060bf8e11457f/vincenty-0.1.4.tar.gz",
+            "sha256": "eaa2f2de835f369cbd71c1a01ccd4e0d412da0f4aeef7c9692242b9ce182785a"
+        }
+    ]
+}
