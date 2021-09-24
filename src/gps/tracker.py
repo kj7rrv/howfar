@@ -13,7 +13,7 @@ class Tracker:
     def __init__(self):
         try:
             self.connection = gpsd_api.Connection()
-            connection.enabled = True
+            self.connection.enabled = True
         except ConnectionRefusedError:
             print("Unable to connect to gpsd")
 
@@ -37,7 +37,7 @@ class Tracker:
                 self.connection.clear_queue()
                 self.last_point = tpvs[-1]
                 self.acquired = True
-                self.emit_event("acquired", last_point)
+                self.emit_event("acquired", self.last_point)
         else:
             tpvs = self.connection.get_messages(['TPV'], clear=True)
             if tpvs:
