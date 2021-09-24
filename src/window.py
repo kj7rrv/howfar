@@ -3,6 +3,8 @@ gi.require_version('Handy', '1')
 from gi.repository import Gtk, Handy, GLib
 
 from .gps.tracker import Tracker
+from .conversion.metric import Metric
+from .conversion.imperial import Imperial
 
 @Gtk.Template(resource_path='/com/github/linux-distance-tracker/window.ui')
 class LdtWindow(Gtk.ApplicationWindow):
@@ -26,6 +28,7 @@ class LdtWindow(Gtk.ApplicationWindow):
         self.tracker.on_event("pace", self.on_pace_update)
         self.tracker.on_event("distance", self.on_distance_update)
         self.tracker.on_event("error", self.on_gps_error)
+        self.converter = Metric()
 
     def render_number(self, number):
         return "{:.1f}".format(number)
@@ -56,10 +59,12 @@ class LdtWindow(Gtk.ApplicationWindow):
         print("gps acquired", data)
 
     def on_pace_update(self, data):
-        self.stats_pace.set_text(self.render_number(data))
+        pace = self.converter.pace(data)
+        self.stats_pace.set_text(self.render_number(pace))
 
     def on_distance_update(self, data):
-        self.stats_distance.set_text(self.render_number(data))
+        distance = self.converter.distance(data)
+        self.stats_distance.set_text(self.render_number(distance))
 
     # GTK callbacks
 

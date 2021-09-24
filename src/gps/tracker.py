@@ -65,6 +65,7 @@ def main():
         tpvs = conn.get_messages(['TPV'], clear=True)
         if not tpvs:
             continue
+        print(tpvs)
         meters = distance.distance([last_point] + tpvs)[0]
         total_distance += meters
         last_point = tpvs[-1]

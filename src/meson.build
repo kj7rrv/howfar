@@ -31,4 +31,5 @@ ldt_sources = [
   'window.py',
 ]
 install_subdir('gps', install_dir: moduledir)
+install_subdir('conversion', install_dir: moduledir)
 install_data(ldt_sources, install_dir: moduledir)
