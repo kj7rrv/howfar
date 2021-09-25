@@ -1,4 +1,4 @@
-class Imperial:
+class USCustomary:
     def __init__(self):
         self.names = {
             "distance": "mile",
