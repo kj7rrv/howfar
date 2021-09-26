@@ -1,6 +1,10 @@
 # linux-distance-tracker
 Linux distance tracker
 
+## IRC
+
+#ldt on Libera Chat
+
 ## Installation
 
 ### Build requirements
