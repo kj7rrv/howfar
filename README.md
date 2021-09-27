@@ -1,9 +1,9 @@
-# linux-distance-tracker
+# HowFar
 Linux distance tracker
 
 ## IRC
 
-#ldt on Libera Chat
+#howfar on Libera Chat
 
 ## Installation
 
