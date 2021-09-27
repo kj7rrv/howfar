@@ -6,7 +6,7 @@ from .gps.tracker import Tracker
 from .conversion.metric import Metric
 from .conversion.us_customary import USCustomary
 
-@Gtk.Template(resource_path='/com/github/linux-distance-tracker/window.ui')
+@Gtk.Template(resource_path='/com.kj7rrv.howfar/window.ui')
 class LdtWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'LdtWindow'
     # init LibHandy so it renders properly

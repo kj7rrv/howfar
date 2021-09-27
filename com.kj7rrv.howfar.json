@@ -1,9 +1,9 @@
 {
-    "app-id" : "com.github.linux-distance-tracker",
+    "app-id" : "com.kj7rrv.howfar",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "40",
     "sdk" : "org.gnome.Sdk",
-    "command" : "ldt",
+    "command" : "howfar",
     "finish-args" : [
         "--share=network",
         "--share=ipc",
@@ -44,7 +44,7 @@
 	    ]
 	},
         {
-            "name" : "ldt",
+            "name" : "howfar",
             "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [

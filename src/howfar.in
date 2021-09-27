@@ -1,6 +1,6 @@
 #!@PYTHON@
 
-# ldt.in
+# howfar.in
 #
 # Copyright 2021 Armen
 #
@@ -39,14 +39,14 @@ localedir = '@localedir@'
 
 sys.path.insert(1, pkgdatadir)
 signal.signal(signal.SIGINT, signal.SIG_DFL)
-gettext.install('ldt', localedir)
+gettext.install('howfar', localedir)
 
 if __name__ == '__main__':
     import gi
 
     from gi.repository import Gio
-    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'ldt.gresource'))
+    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'howfar.gresource'))
     resource._register()
 
-    from ldt import main
+    from howfar import main
     sys.exit(main.main(VERSION))

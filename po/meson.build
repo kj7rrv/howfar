@@ -1,1 +1,1 @@
-i18n.gettext('ldt', preset: 'glib')
+i18n.gettext('howfar', preset: 'glib')

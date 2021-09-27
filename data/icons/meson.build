@@ -1,4 +1,4 @@
-application_id = 'com.github.linux-distance-tracker'
+application_id = 'com.kj7rrv.howfar'
 
 scalable_dir = join_paths('hicolor', 'scalable', 'apps')
 install_data(

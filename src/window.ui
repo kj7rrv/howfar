@@ -471,8 +471,8 @@
       <object class="HdyHeaderBar" id="header_bar">
         <property name="visible">True</property>
         <property name="can-focus">False</property>
-        <property name="title">LDT</property>
-        <property name="subtitle" translatable="yes">Linux Distance Tracker</property>
+        <property name="title">HowFar</property>
+	<!-- <property name="subtitle" translatable="yes">Linux Distance Tracker</property> -->
         <property name="show-close-button">True</property>
         <child>
           <placeholder/>
