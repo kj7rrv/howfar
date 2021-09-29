@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=ldt
-Exec=ldt
-Icon=com.github.linux-distance-tracker
+Name=how_far
+Exec=how_far
+Icon=com.kj7rrv.howfar
 Terminal=false
 Type=Application
 Categories=GTK;

@@ -1,6 +1,6 @@
 desktop_file = i18n.merge_file(
-  input: 'com.github.linux-distance-tracker.desktop.in',
-  output: 'com.github.linux-distance-tracker.desktop',
+  input: 'com.kj7rrv.howfar.desktop.in',
+  output: 'com.kj7rrv.howfar.desktop',
   type: 'desktop',
   po_dir: '../po',
   install: true,
@@ -15,8 +15,8 @@ if desktop_utils.found()
 endif
 
 appstream_file = i18n.merge_file(
-  input: 'com.github.linux-distance-tracker.appdata.xml.in',
-  output: 'com.github.linux-distance-tracker.appdata.xml',
+  input: 'com.kj7rrv.howfar.appdata.xml.in',
+  output: 'com.kj7rrv.howfar.appdata.xml',
   po_dir: '../po',
   install: true,
   install_dir: join_paths(get_option('datadir'), 'appdata')
@@ -29,7 +29,7 @@ if appstream_util.found()
   )
 endif
 
-install_data('com.github.linux-distance-tracker.gschema.xml',
+install_data('com.kj7rrv.howfar.gschema.xml',
   install_dir: join_paths(get_option('datadir'), 'glib-2.0/schemas')
 )
 

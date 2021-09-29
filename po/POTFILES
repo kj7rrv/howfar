@@ -1,6 +1,6 @@
-data/com.github.linux-distance-tracker.desktop.in
-data/com.github.linux-distance-tracker.appdata.xml.in
-data/com.github.linux-distance-tracker.gschema.xml
+data/com.kj7rrv.howfar.desktop.in
+data/com.kj7rrv.howfar.appdata.xml.in
+data/com.kj7rrv.howfar.gschema.xml
 src/window.ui
 src/main.py
 src/window.py

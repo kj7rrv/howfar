@@ -1,0 +1,152 @@
+[
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/meson --internal msgfmthelper ../data/com.kj7rrv.howfar.desktop.in data/com.kj7rrv.howfar.desktop desktop ../data/../po",
+    "file": "../data/com.kj7rrv.howfar.desktop.in",
+    "output": "data/com.kj7rrv.howfar.desktop"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/meson --internal msgfmthelper ../data/com.kj7rrv.howfar.appdata.xml.in data/com.kj7rrv.howfar.appdata.xml xml ../data/../po",
+    "file": "../data/com.kj7rrv.howfar.appdata.xml.in",
+    "output": "data/com.kj7rrv.howfar.appdata.xml"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/glib-compile-resources ../src/how_far.gresource.xml --sourcedir ../src --internal --generate --target src/how_far.gresource --dependency-file src/how_far.gresource.d",
+    "file": "../src/how_far.gresource.xml",
+    "output": "src/how_far.gresource"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "",
+    "file": "meson-how_far-pot",
+    "output": "how_far-pot"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "",
+    "file": "meson-how_far-gmo",
+    "output": "how_far-gmo"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "",
+    "file": "meson-how_far-update-po",
+    "output": "how_far-update-po"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/meson test --no-rebuild --print-errorlogs",
+    "file": "all",
+    "output": "meson-test"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "",
+    "file": "meson-test",
+    "output": "test"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/meson test --benchmark --logbase benchmarklog --num-processes=1 --no-rebuild",
+    "file": "all",
+    "output": "meson-benchmark"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "",
+    "file": "meson-benchmark",
+    "output": "benchmark"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/meson install --no-rebuild",
+    "file": "PHONY",
+    "output": "meson-install"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "",
+    "file": "meson-install",
+    "output": "install"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/meson dist",
+    "file": "PHONY",
+    "output": "meson-dist"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "",
+    "file": "meson-dist",
+    "output": "dist"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/meson --internal scanbuild /run/media/armen/Storage/Workspace/linux-distance-tracker /run/media/armen/Storage/Workspace/linux-distance-tracker/builddir /usr/bin/meson",
+    "file": "PHONY",
+    "output": "meson-scan-build"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "",
+    "file": "meson-scan-build",
+    "output": "scan-build"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/meson --internal uninstall",
+    "file": "PHONY",
+    "output": "meson-uninstall"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "",
+    "file": "meson-uninstall",
+    "output": "uninstall"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "",
+    "file": "data/com.kj7rrv.howfar.desktop",
+    "output": "all"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "",
+    "file": "meson-clean",
+    "output": "clean"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/meson --internal cleantrees /run/media/armen/Storage/Workspace/linux-distance-tracker/builddir/meson-private/cleantrees.dat",
+    "file": "PHONY",
+    "output": "meson-clean-ctlist"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "",
+    "file": "meson-clean-ctlist",
+    "output": "clean-ctlist"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/ninja -t clean",
+    "file": "PHONY",
+    "output": "meson-clean"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/meson --internal regenerate /run/media/armen/Storage/Workspace/linux-distance-tracker /run/media/armen/Storage/Workspace/linux-distance-tracker/builddir --backend ninja",
+    "file": "../meson.build",
+    "output": "build.ninja"
+  },
+  {
+    "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
+    "command": "/usr/bin/meson --internal regenerate /run/media/armen/Storage/Workspace/linux-distance-tracker /run/media/armen/Storage/Workspace/linux-distance-tracker/builddir --backend ninja",
+    "file": "PHONY",
+    "output": "reconfigure"
+  }
+]

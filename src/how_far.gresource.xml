@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/com/github/linux-distance-tracker">
+  <gresource prefix="com/kj7rrv/howfar">
     <file>window.ui</file>
     <file preprocess="xml-stripblanks">icons/walking-symbolic.svg</file>
     <file preprocess="xml-stripblanks">icons/list-symbolic.svg</file>

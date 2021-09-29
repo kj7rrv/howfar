@@ -10,7 +10,7 @@ from .window import LdtWindow
 
 class Application(Gtk.Application):
     def __init__(self):
-        super().__init__(application_id='com.github.linux-distance-tracker',
+        super().__init__(application_id='com.kj7rrv.howfar',
                          flags=Gio.ApplicationFlags.FLAGS_NONE)
 
     def do_activate(self):
