@@ -1,1 +1,1 @@
-i18n.gettext('how_far', preset: 'glib')
+i18n.gettext('howfar', preset: 'glib')

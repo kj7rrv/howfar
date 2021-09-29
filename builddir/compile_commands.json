@@ -13,27 +13,27 @@
   },
   {
     "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
-    "command": "/usr/bin/glib-compile-resources ../src/how_far.gresource.xml --sourcedir ../src --internal --generate --target src/how_far.gresource --dependency-file src/how_far.gresource.d",
-    "file": "../src/how_far.gresource.xml",
-    "output": "src/how_far.gresource"
+    "command": "/usr/bin/glib-compile-resources ../src/howfar.gresource.xml --sourcedir ../src --internal --generate --target src/howfar.gresource --dependency-file src/howfar.gresource.d",
+    "file": "../src/howfar.gresource.xml",
+    "output": "src/howfar.gresource"
   },
   {
     "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
     "command": "",
-    "file": "meson-how_far-pot",
-    "output": "how_far-pot"
+    "file": "meson-howfar-pot",
+    "output": "howfar-pot"
   },
   {
     "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
     "command": "",
-    "file": "meson-how_far-gmo",
-    "output": "how_far-gmo"
+    "file": "meson-howfar-gmo",
+    "output": "howfar-gmo"
   },
   {
     "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",
     "command": "",
-    "file": "meson-how_far-update-po",
-    "output": "how_far-update-po"
+    "file": "meson-howfar-update-po",
+    "output": "howfar-update-po"
   },
   {
     "directory": "/run/media/armen/Storage/Workspace/linux-distance-tracker/builddir",

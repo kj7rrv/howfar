@@ -4,7 +4,7 @@ from gi.repository import Gtk, Handy, GLib
 
 from .gps.tracker import Tracker
 from .conversion.metric import Metric
-from .conversion.imperial import Imperial
+from .conversion.us_customary import USCustomary
 
 @Gtk.Template(resource_path='/com/kj7rrv/howfar/window.ui')
 class LdtWindow(Gtk.ApplicationWindow):

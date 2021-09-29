@@ -1,9 +1,9 @@
 pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-moduledir = join_paths(pkgdatadir, 'how_far')
+moduledir = join_paths(pkgdatadir, 'howfar')
 gnome = import('gnome')
 
-gnome.compile_resources('how_far',
-  'how_far.gresource.xml',
+gnome.compile_resources('howfar',
+  'howfar.gresource.xml',
   gresource_bundle: true,
   install: true,
   install_dir: pkgdatadir,
@@ -18,18 +18,18 @@ conf.set('localedir', join_paths(get_option('prefix'), get_option('localedir')))
 conf.set('pkgdatadir', pkgdatadir)
 
 configure_file(
-  input: 'how_far.in',
-  output: 'how_far',
+  input: 'howfar.in',
+  output: 'howfar',
   configuration: conf,
   install: true,
   install_dir: get_option('bindir')
 )
 
-how_far_sources = [
+howfar_sources = [
   '__init__.py',
   'main.py',
   'window.py',
 ]
 install_subdir('gps', install_dir: moduledir)
 install_subdir('conversion', install_dir: moduledir)
-install_data(how_far_sources, install_dir: moduledir)
+install_data(howfar_sources, install_dir: moduledir)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="how_far">
+<schemalist gettext-domain="howfar">
 	<schema id="com.kj7rrv.howfar" path="/com/kj7rrv/howfar/">
 	</schema>
 </schemalist>

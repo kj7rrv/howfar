@@ -7,7 +7,7 @@ Version: 0.56.2
 Source dir: /run/media/armen/Storage/Workspace/linux-distance-tracker
 Build dir: /run/media/armen/Storage/Workspace/linux-distance-tracker/builddir
 Build type: native build
-Project name: how_far
+Project name: howfar
 Project version: 0.1.0
 Build machine cpu family: x86_64
 Build machine cpu: x86_64
@@ -42,7 +42,7 @@ Called `/usr/bin/pkg-config glib-2.0 --libs` -> 0
 None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
 Program glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
 Program python3 found: YES (/usr/bin/python3)
-Configuring how_far using configuration
+Configuring howfar using configuration
 Program build-aux/meson/postinstall.py found: YES (/run/media/armen/Storage/Workspace/linux-distance-tracker/build-aux/meson/postinstall.py)
 Build targets in project: 6
 

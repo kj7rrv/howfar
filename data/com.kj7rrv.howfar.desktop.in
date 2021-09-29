@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=how_far
-Exec=how_far
+Name=HowFar
+Exec=howfar
 Icon=com.kj7rrv.howfar
 Terminal=false
 Type=Application

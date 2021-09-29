@@ -1,0 +1,26 @@
+#!@PYTHON@
+
+# howfar.in
+
+import os
+import sys
+import signal
+import gettext
+
+VERSION = '@VERSION@'
+pkgdatadir = '@pkgdatadir@'
+localedir = '@localedir@'
+
+sys.path.insert(1, pkgdatadir)
+signal.signal(signal.SIGINT, signal.SIG_DFL)
+gettext.install('howfar', localedir)
+
+if __name__ == '__main__':
+    import gi
+
+    from gi.repository import Gio
+    resource = Gio.Resource.load(os.path.join(pkgdatadir, 'howfar.gresource'))
+    resource._register()
+
+    from howfar import main
+    sys.exit(main.main(VERSION))
