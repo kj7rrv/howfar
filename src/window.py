@@ -20,6 +20,8 @@ class LdtWindow(Gtk.ApplicationWindow):
     start_button:Gtk.Button = Gtk.Template.Child()
     error_message_revealer:Gtk.Revealer = Gtk.Template.Child()
     error_message_label:Gtk.Label = Gtk.Template.Child()
+    gps_status_icon:Gtk.Image = Gtk.Template.Child()
+    gps_acquiring_spinner:Gtk.Spinner = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -47,6 +49,7 @@ class LdtWindow(Gtk.ApplicationWindow):
     def stop_tracking(self):
         self.tracker.tracking = False
         self.start_button.set_label("Start Tracking")
+        self.gps_acquiring_spinner.stop()
 
     # GPS callbacks
 
@@ -54,9 +57,13 @@ class LdtWindow(Gtk.ApplicationWindow):
         self.error_message_label.set_text(data)
         self.error_message_revealer.set_reveal_child(True)
         self.stop_tracking()
+        self.gps_status_icon.set_from_icon_name("location-services-disabled-symbolic", Gtk.IconSize.LARGE_TOOLBAR)
+        self.gps_acquiring_spinner.stop()
 
     def on_gps_acquired(self, data):
         print("gps acquired", data)
+        self.gps_acquiring_spinner.stop()
+        self.gps_status_icon.set_from_icon_name("location-services-active-symbolic", Gtk.IconSize.LARGE_TOOLBAR)
 
     def on_pace_update(self, data):
         pace = self.converter.pace(data)
@@ -71,6 +78,8 @@ class LdtWindow(Gtk.ApplicationWindow):
     @Gtk.Template.Callback()
     def on_start_button_clicked(self, button, userdata=None):
         self.toggle_tracking()
+        if not self.tracker.acquired:
+            self.gps_acquiring_spinner.start()
 
     @Gtk.Template.Callback()
     def on_error_message_close(self, item, userdata=None):

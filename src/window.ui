@@ -29,25 +29,6 @@
                     <property name="can-focus">False</property>
                     <child>
                       <object class="GtkButton">
-                        <property name="label" translatable="yes">no signal</property>
-                        <property name="visible">True</property>
-                        <property name="can-focus">True</property>
-                        <property name="receives-default">True</property>
-                        <property name="margin-start">4</property>
-                        <property name="margin-end">4</property>
-                        <property name="margin-top">4</property>
-                        <property name="margin-bottom">4</property>
-                        <property name="relief">none</property>
-                        <property name="always-show-image">True</property>
-                      </object>
-                      <packing>
-                        <property name="expand">False</property>
-                        <property name="fill">True</property>
-                        <property name="position">0</property>
-                      </packing>
-                    </child>
-                    <child>
-                      <object class="GtkButton">
                         <property name="label" translatable="yes">Walk</property>
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
@@ -79,6 +60,20 @@
                       </packing>
                     </child>
                     <child>
+                      <object class="GtkImage" id="gps_status_icon">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="xpad">8</property>
+                        <property name="icon-name">location-services-disabled-symbolic</property>
+                        <property name="icon_size">3</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                    <child>
                       <object class="GtkSeparator">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
@@ -86,7 +81,19 @@
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">True</property>
-                        <property name="position">2</property>
+                        <property name="position">3</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkSpinner" id="gps_acquiring_spinner">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="margin-start">8</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">3</property>
                       </packing>
                     </child>
                   </object>
